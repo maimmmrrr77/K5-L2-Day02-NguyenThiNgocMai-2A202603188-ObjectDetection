@@ -4,12 +4,12 @@
 
 ## 1. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Lớp:
-- Link repo bài làm:
-- Link Colab đã chạy:
+- Họ tên: Nguyễn Thị Ngọc Mai
+- MSSV: 2A202603188
+- Email: 26ai.maintn2@vinuni.edu.vn
+- Lớp: L2A
+- Link repo bài làm: https://github.com/maimmmrrr77/K5-L2-Day02-NguyenThiNgocMai-2A202603188-ObjectDetection
+- Link Colab đã chạy: https://colab.research.google.com/drive/1Fu0vbPfJo_WdO5N5vXYf3xDbzStUNnVO#scrollTo=CpcicVc4RzdV
 
 ## 2. Schema và mini guideline
 
