@@ -25,6 +25,8 @@ Dẫn tới [GUIDELINE_MINI.md](../../GUIDELINE_MINI.md). Tóm tắt ba ca mơ h
 
 ## 4. Gold QC và rework
 
+Không có rewwork
+
 | Chỉ số | Trước sửa | Sau sửa nếu có |
 |---|---:|---:|
 | TP |369| |
