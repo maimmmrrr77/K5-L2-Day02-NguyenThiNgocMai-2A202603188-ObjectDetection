@@ -46,30 +46,39 @@ Dẫn tới `outputs/annotation_evaluation.json` trong repo. Nếu rework, ghi �
 
 | Chỉ số trên 10 ảnh eval | Giá trị |
 |---|---:|
-| Precision |0.4696 |
-| Recall |0.2326|
-| mAP50 |0.2763|
-| mAP50–95 |0.2062|
+| Precision |0.4105453698519763 |
+| Recall |0.23026854853628678|
+| mAP50 |0.27225886498171903|
+| mAP50–95 |0.20168300309748077|
 
 Đặt cả 2 folder `assets/eval_predictions/` và `assets/yolo26_runs/` (giải nén từ `day2_colab_outputs.zip`) cạnh báo cáo và dẫn link tương đối. Không chỉ ghi số; chỉ ra ít nhất một ảnh và vật thể cụ thể.
 
 Trả lời bốn câu hỏi cuối notebook:
 
-1. Lớp nào recall thấp nhất? Ảnh nào minh họa?
-2. Nếu mAP50 cao nhưng mAP50–95 thấp, cần kiểm điều gì trên box?
-3. Lỗi class nào có thể liên quan guideline? Dữ kiện nào hỗ trợ nhận xét?
-4. Vì sao không dùng 10 ảnh eval để train? Vai trò validation của chúng trong notebook là gì?
+1. Lớp nào recall thấp nhất? Ảnh nào minh họa? lớp bus có recall thấp nhất
+2. Nếu mAP50 cao nhưng mAP50–95 thấp, cần kiểm điều gì trên box? độ chính xác viền khung, kích thước đối tượng, mức độ chồng lấp
+3. Lỗi class nào có thể liên quan guideline? Dữ kiện nào hỗ trợ nhận xét? 
+4. Vì sao không dùng 10 ảnh eval để train? Vai trò validation của chúng trong notebook là gì? không dùng eval để train vì tránh học vẹt. vai trò: đánh giá khách quan, trực quan hóa lỗi dự đoán, theo dõi và chọn checkpoint.
 
 ## 6. Khó khăn và cách xử lý
 
 | Bước/thời điểm | Lỗi quan sát | Cách đã thử | Kết quả/còn thiếu |
 |---|---|---|---|
-| | | | |
+|| | | |
 
 ## 7. Tự đánh giá theo rubric
 
-Đối chiếu [RUBRIC.md](../../RUBRIC.md): phần nào đã có kết quả, phần nào còn thiếu hoặc chưa kiểm được. Không tự nhận hoàn thành bước chưa chạy.
+Đối chiếu [RUBRIC.md](../../RUBRIC.md): phần nào đã có kết quả, phần nào còn thiếu hoặc chưa kiểm được. Đã làm được:
+- Không tự nhận hoàn thành bước chưa chạy.
+- Hoàn thành và định dạng YOLO
+- bám sát và hình học box 
+- Mini guideline và quyết định mơ hồ
+- Pipeline YOLO và phân tích
+Chưa làm được:
+- Gold-set annotation QC: F1 >= 0.80  và mean IoU >= 0.70
+- Đầy đủ vật thể: gán đủ xe thuộc schema, kể cả xe che/cắt khung có thể nhận diện
 
 ## 8. Công cụ AI và tài liệu tham khảo
 
 Ghi công cụ đã dùng, dùng ở bước nào và phần đã tự kiểm tra; không dùng thì ghi rõ. Liệt kê nguồn ngoài repo được sử dụng. Không ghi mật khẩu/token hoặc đính kèm gold train.
+không dùng
